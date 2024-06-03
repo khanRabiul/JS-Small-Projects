@@ -37,8 +37,8 @@ a {
     width: 0px;
     height: 0px;
     border-radius: 50%;
-    left: 50%;
-    top: 50%;
+    left: var(--xPos); /*Declaring var to make accessible for js*/
+    top: var(--yPos); /*Declaring var to make accessible for js*/
     transform: translate(-50%, -50%);
     transition: all .5s;
 }   
@@ -46,5 +46,4 @@ a {
 .btn:hover::before {
     width: 300px;
     height: 300px;
-    /* color: #fff; */
 }
